@@ -39,28 +39,28 @@
 
 /* ===================== font-size======================== */
 .text-12{
-    font-size: 12px;
+    font-size: var(--fs-s);
 }
 .text-14{
-    font-size: 14px;
+    font-size: var(--fs-xs);
 }
 .text-16{
-    font-size: 16px;
+    font-size: var(--fs-sm);
 }
 .text-20{
-    font-size: 20px;
+    font-size:var(--fs-md);
 }
 .text-23{
-    font-size: 23.83px;
+    font-size: var(--fs-lg);
 }
 .text-24{
-    font-size: 24px;
+    font-size: var(--fs-xl);
 }
 .text-40{
-    font-size: 40px;
+    font-size: var(--fs-xl);
 }
 .text-61{
-    font-size: 61.17px;
+    font-size: var(--fs-3xl);
 }
 /* ================================ line height =========================== */
 .lh-18{
@@ -94,18 +94,18 @@
     line-height: 21.53px;
 }
 /* ========================= font-weight==================== */
-.fw-normal{
-    font-weight: 400;
+.fw-400{
+    font-weight: 400 !important;
 }
-.fw-medium{
-    font-weight: 600;
+.fw-600{
+    font-weight: 600 !important;
 }
-.fw-semibold{
-    font-weight: 700;
+.fw-700{
+    font-weight: 700 !important;
 }
 
-.fw-bold{
-    font-weight: 800;
+.fw-800{
+    font-weight: 800 !important;
 }
 /* ======================== font- family============================== */
 .ff-worksans{
@@ -164,8 +164,33 @@ ul{
     padding-left: 0 !important;
 }
 
+/* ===================================== maitre-d-section =================================================== */
+/* .gradient-text {
+    background-color:#F3eC78;
+    background-image: 
+    linear-gradient(96.64deg, #FD9B2B 13.58%, #F14F09 86.99%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+} */
+
+.gradient-text {
+    background: -webkit-linear-gradient(96.64deg, #FD9B2B 13.58%, #F14F09 86.99%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.line{
+    height: 1px;
+    background: linear-gradient(96.64deg, #FD9B2B 13.58%, #F14F09 86.99%);
+    width: 44px;
+}
 
 
+.pt-30{
+    padding-top: 30px;
+}
 
 
 
@@ -258,8 +283,23 @@ ul{
         top: 0;
     }
 }
+
+@media (min-width:576px) {
+    .text-40{
+        font-size: var(--fs-2xl);
+    }
+}
 @media (min-width:992px) {
     .gap-lg-46{
         gap: 46px;
+    }
+    .pt-lg-90{
+        padding-top: 90px;
+    }
+    .pt-lg-109{
+        padding-top: 109px;
+    }
+    .pt-lg-14{
+        padding-top: 14px;
     }
 }
