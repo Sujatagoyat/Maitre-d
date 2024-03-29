@@ -28,6 +28,7 @@
     --fc-black:#000000;
     --fc-white:#ffffff;
     --fc-lightcream:#FFF0E9;
+    --fc-lightgrey:#4D4D4D;
 }
 /* ===================== color ======================== */
 .color-black{
@@ -35,6 +36,9 @@
 }
 .color-white{
     color: var(--fc-white);
+}
+.color-lightgrey{
+    color: var(--fc-lightgrey);
 }
 
 /* ===================== font-size======================== */
@@ -117,6 +121,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 1006px;
 }
 .gap-30{
     gap: 30px;
@@ -191,6 +196,85 @@ ul{
 .pt-30{
     padding-top: 30px;
 }
+/* ====================================== why choose ================================================ */
+.union-bg-img{
+    background-image: url(../images/png/union-bg-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pt-50{
+    padding-top: 50px;
+}
+.pb-50{
+    padding-bottom: 50px;
+}
+
+.svg-box{
+    width: 87px;
+    height: 87px;
+    border-radius: 50%;
+    background:  linear-gradient(96.64deg, #FD9B2B 13.58%, #F14F09 86.99%);   
+}
+.max-w-257{
+    max-width: 257px;
+}
+.pt-lg-30{
+    padding-top: 30px;
+}
+.choose-card{
+    max-width: 293px;
+    width: 100%;
+    padding: 40px 18px;
+    box-shadow: 0px 4px 66px 0px #0000000A;
+    border-radius: 8px;
+    transition: all 300ms linear;
+    height: 100%;
+    cursor: pointer;
+}
+.choose-card:hover {
+    /* color: var(--fc-white); */
+    background: linear-gradient(96.64deg, #FD9B2B 13.58%, #F14F09 86.99%);
+    transform: translateY(-43px);
+}
+.choose-card:hover .clr-white{
+    color: var(--fc-white);
+}
+.choose-card:hover .svg-box{
+    background: var(--fc-white);
+
+} 
+.choose-card:hover svg path{
+        fill: url(#gradient);  
+}
+
+
+.pb-lg-43{
+    padding-bottom: 43px;
+}
+.sign-btn{
+    padding: 12px 37px;
+    background: linear-gradient(96.64deg, #FD9B2B 13.58%, #F14F09 86.99%);
+     border: transparent;
+     border-radius: 30.5px;
+}
+.max-w-212{
+    max-width: 212px;
+}
+.mb-lg-189{
+    margin-bottom: 189px;
+}
+
+.zoom:hover.sign-btn{
+    background: linear-gradient(96.64deg, #F14F09 10.58%, #FD9B2B 100%);
+    scale: 1.1;
+    /* transform: all 200ms linear; */
+}
+.blue-svg{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+}
 
 
 
@@ -216,8 +300,15 @@ ul{
         font-size: var(--fs-2xl);
     }
     .lh-71{
-        line-height: 60px;
+        line-height: 55px;
     }
+ .gap-45{
+        gap: 30px;
+   
+} 
+}
+@media (max-width:768px) {
+    
 }
 
 @media (max-width:992px) {
@@ -289,6 +380,11 @@ ul{
         font-size: var(--fs-2xl);
     }
 }
+@media (min-width:768px) {
+    .gap-45{
+        gap: 45px;
+    }
+}
 @media (min-width:992px) {
     .gap-lg-46{
         gap: 46px;
@@ -302,4 +398,12 @@ ul{
     .pt-lg-14{
         padding-top: 14px;
     }
+    
+    .pt-lg-217{
+        padding-top: 217px;
+    }
+    .pb-lg-110{
+        padding-bottom: 110px;
+    }
+    
 }
