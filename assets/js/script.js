@@ -46,3 +46,8 @@ $('.responsive').slick({
       // instead of a settings object
     ]
   });
+  const turnBtn = document.querySelector(".turnBtn");
+  turnBtn.addEventListener("click", function () {
+    turnBtn.classList.toggle("justify-content-end");
+});
+//
