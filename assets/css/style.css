@@ -29,6 +29,8 @@
     --fc-white:#ffffff;
     --fc-lightcream:#FFF0E9;
     --fc-lightgrey:#4D4D4D;
+    --fc-offwhite:#B2B2B2;
+    --fc-grey:#404040;
 }
 /* ===================== color ======================== */
 .color-black{
@@ -39,6 +41,9 @@
 }
 .color-lightgrey{
     color: var(--fc-lightgrey);
+}
+.color-offwhite{
+    color: var(--fc-offwhite);
 }
 
 /* ===================== font-size======================== */
@@ -217,6 +222,12 @@ ul{
 .max-w-257{
     max-width: 257px;
 }
+.max-w-215{
+    max-width: 215px;
+}
+.max-w-218{
+    max-width: 218px;
+}
 .pt-lg-30{
     padding-top: 30px;
 }
@@ -259,8 +270,8 @@ ul{
 .max-w-212{
     max-width: 212px;
 }
-.mb-lg-189{
-    margin-bottom: 189px;
+.mb-40{
+    margin-bottom: 40px;
 }
 
 .zoom:hover.sign-btn{
@@ -344,6 +355,17 @@ ul{
 .resizer_none{
     resize: none;
 }
+.contact-svg{
+    position: absolute;
+    top: 32%;
+    left: 26%;
+}
+.pb-lg-147{
+    padding-bottom: 147px;
+}
+.pb-30{
+    padding-bottom: 30px;
+}
 
 
 .outer-box{
@@ -410,14 +432,34 @@ ul{
 .mt-10{
     margin-top: 10px;
 }
+.pb-50{
+    padding-bottom: 50px;
+}
 /* =========================== footer =========================================== */
 .footer-bg-img{
-    background-image: url(../images/png/footer-bg-img.png);
-    background-position: center;
+    background-image: url(../images/png/union-footer-img.png);
+    /* background-position: center; */
     background-size: cover;
     background-repeat: no-repeat;
 }
-
+.gap-51{
+    gap: 51px;
+}
+.pb-lg-33{
+    padding-bottom: 33px;
+}
+.border_top{
+    border-top: 1px solid var(--fc-grey);
+}
+.pb-lg-33{
+    padding-bottom: 33px;
+}
+.pt-lg-82{
+    padding-top: 82px;
+}
+.pt-20{
+    padding-top: 20px;
+}
 
 
 
@@ -570,6 +612,9 @@ ul{
     }
     .max-w-375{
         max-width: 375px;
+    }
+    .mb-lg-189{
+        margin-bottom: 189px;
     }
     
 }
