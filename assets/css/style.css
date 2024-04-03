@@ -499,8 +499,8 @@ ul{
     width: 100%;
 }
 .topBtn {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     background: linear-gradient(96.64deg, #FD9B2B 13.58%, #F14F09 86.99%);
     border-radius: 50%;
     /* display: none; */
