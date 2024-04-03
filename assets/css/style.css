@@ -388,9 +388,7 @@ ul{
     top: 32%;
     left: 26%;
 }
-.pb-lg-147{
-    padding-bottom: 147px;
-}
+
 .pb-30{
     padding-bottom: 30px;
 }
@@ -553,10 +551,10 @@ ul{
 
 @media (max-width:576px) {
     .text-61{
-        font-size: var(--fs-2xl);
+        font-size: var(--fs-xl);
     }
     .lh-71{
-        line-height: 55px;
+        line-height: 35px;
     }
  .gap-45{
         gap: 30px;
@@ -690,6 +688,9 @@ ul{
     }
     .mb-lg-189{
         margin-bottom: 189px;
+    }
+    .pb-lg-147{
+        padding-bottom: 157px;
     }
     
 }
