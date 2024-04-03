@@ -168,10 +168,24 @@
 .svg-pstn{
     position: absolute;
     top: 75%;
-    left: 14%;
+    left: 8%;
 }
 ul{
     padding-left: 0 !important;
+}
+.underline::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: var(--fc-black);
+    left: 0;
+    bottom: -4px;
+    transition: all 200ms linear;
+}
+
+.underline:hover::after {
+    width: 100%;
 }
 
 /* ===================================== maitre-d-section =================================================== */
@@ -211,11 +225,24 @@ ul{
 .pt-50{
     padding-top: 50px;
 }
+.card-ellipse-1{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.card-ellipse-2{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.max-w-250{
+    max-width: 250px;
+}
 
 
 .svg-box{
     width: 87px;
-    height: 87px;
+    min-height: 87px;
     border-radius: 50%;
     background:  linear-gradient(96.64deg, #FD9B2B 13.58%, #F14F09 86.99%);   
 }
@@ -232,13 +259,14 @@ ul{
     padding-top: 30px;
 }
 .choose-card{
-    max-width: 293px;
+    min-width: 293px;
     width: 100%;
     padding: 40px 18px;
     box-shadow: 0px 4px 66px 0px #0000000A;
     border-radius: 8px;
     transition: all 300ms linear;
     height: 100%;
+    max-height: 293px;
     cursor: pointer;
 }
 .choose-card:hover {
@@ -408,9 +436,7 @@ ul{
     background: linear-gradient(96.64deg, #FD9B2B 13.58%, #F14F09 86.99%);
 
 }
-/* .backtop {
-    animation: move 1.3s infinite linear;
-} */
+
 .platinum-box{
     /* max-width: 570px; */
     height: 171px;
@@ -460,6 +486,55 @@ ul{
 .pt-20{
     padding-top: 20px;
 }
+.bottom_line::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: var(--fc-white);
+    left: 0;
+    bottom: -4px;
+    transition: all 200ms linear;
+}
+
+.bottom_line:hover::after {
+    width: 100%;
+}
+.topBtn {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(96.64deg, #FD9B2B 13.58%, #F14F09 86.99%);
+    border-radius: 50%;
+    /* display: none; */
+    position: fixed;
+    bottom: 20px;
+    right: 8%;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    /* transition: all 300ms linear; */
+    z-index: 3;
+    /* animation: move 1.3s infinite linear; */
+    /* box-shadow: 0px 3px 15px 3px var(--fc-white); */
+}
+
+.topBtn.show {
+    opacity: 1;
+    visibility: visible;
+}
+.pulse {
+    animation: pulse-animation  2s infinite;
+  }
+  
+  @keyframes pulse-animation {
+    0% {
+      box-shadow: 0 0 0 0px #FD9B2B;
+    }
+    100% {
+      box-shadow: 0px 3px 15px 3px #FD9B2B;
+    }
+  }
+
 
 
 
@@ -536,7 +611,7 @@ ul{
     }
 
     .cross span:nth-child(1) {
-        transform: rotate(53deg) translateY(25px);
+        transform: rotate(56deg) translateY(25px);
         transition: all 300ms linear;
         position: relative;
         top: -7px;
@@ -549,7 +624,7 @@ ul{
     }
 
     .cross span:nth-child(3) {
-        transform: rotate(-49deg) translateY(-28px);
+        transform: rotate(-50deg) translateY(-28px);
         transition: all 300ms linear;
         position: relative;
         top: 0;
