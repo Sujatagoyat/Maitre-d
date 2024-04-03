@@ -410,6 +410,13 @@ ul{
 .mt-10{
     margin-top: 10px;
 }
+/* =========================== footer =========================================== */
+.footer-bg-img{
+    background-image: url(../images/png/footer-bg-img.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 
 
@@ -560,6 +567,9 @@ ul{
     }
     .pt-lg-368{
         padding-top: 368px;
+    }
+    .max-w-375{
+        max-width: 375px;
     }
     
 }
