@@ -334,7 +334,7 @@ svg:hover path {
 }
 
 .choose-card:hover svg path {
-    fill: url(#gradient);
+    fill: url(#gradient1);
 }
 
 
@@ -460,6 +460,9 @@ svg:hover path {
 .pb-30 {
     padding-bottom: 30px;
 }
+.scroll::-webkit-scrollbar {
+    display: none;
+  }
 
 /* ================================ simple pricing for everyone ===================================== */
 .px-sm-20{
@@ -588,7 +591,7 @@ svg:hover path {
     position: absolute;
     width: 0;
     height: 2px;
-    background: var(--fc-white);
+    background: linear-gradient(96.64deg, #FD9B2B 13.58%, #F14F09 86.99%);
     left: 0;
     bottom: -4px;
     transition: all 200ms linear;
