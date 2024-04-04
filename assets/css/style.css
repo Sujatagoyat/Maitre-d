@@ -371,7 +371,7 @@ svg:hover path {
 
 .buy-btn {
     background: linear-gradient(96.64deg, #FD9B2B 13.58%, #F14F09 86.99%);
-    padding: 12px 37px;
+    padding: 8px 25px;
     border-radius: 30.5px;
     border: transparent;
 }
@@ -663,6 +663,9 @@ svg:hover path {
         margin-left: auto;
         margin-right: auto;
     }
+    .justify_content_center{
+        justify-content: center;
+    }
 }
 
 @media (max-width:992px) {
@@ -749,6 +752,12 @@ svg:hover path {
     .pl-md-36 {
         padding-right: 36px !important;
     }
+    .buy-btn {
+        background: linear-gradient(96.64deg, #FD9B2B 13.58%, #F14F09 86.99%);
+        padding: 12px 37px;
+        border-radius: 30.5px;
+        border: transparent;
+    }
 }
 
 @media (min-width:992px) {
@@ -822,6 +831,7 @@ svg:hover path {
     .gap-lg-77 {
         gap: 60px !important;
     }
+   
 
 }
 @media (min-width:1440px) {
