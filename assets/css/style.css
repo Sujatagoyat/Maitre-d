@@ -467,7 +467,11 @@ svg:hover path {
     padding-bottom: 30px;
 }
 
-
+/* ================================ simple pricing for everyone ===================================== */
+.px-sm-20{
+    padding-left: 20px;
+    padding-right: 20px;
+}
 .outer-box {
     /* max-width: 540px; */
     height: 81.6px;
@@ -719,6 +723,10 @@ svg:hover path {
 @media (min-width:576px) {
     .text-40 {
         font-size: var(--fs-2xl);
+    }
+    .px-md-45{
+        padding-left: 45px;
+        padding-right: 45px;
     }
 }
 
