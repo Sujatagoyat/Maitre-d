@@ -399,15 +399,9 @@ svg:hover path {
 .mb-lg-38 {
     margin-bottom: 38px;
 }
-
-.pl-36 {
-    padding-right: 36px !important;
+.max-w-162{
+    max-width: 162px;
 }
-
-.gap-77 {
-    gap: 60px;
-}
-
 .pr-36 {
     padding-right: 36px;
 }
@@ -654,6 +648,18 @@ svg:hover path {
         gap: 30px;
 
     }
+    :root{
+        --fs-2xl:30px
+    }
+}
+@media (max-width:768px) {
+    .text_center {
+        text-align: center;
+    }
+    .mx_auto{
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media (max-width:992px) {
@@ -737,6 +743,9 @@ svg:hover path {
     .gap-45 {
         gap: 45px;
     }
+    .pl-md-36 {
+        padding-right: 36px !important;
+    }
 }
 
 @media (min-width:992px) {
@@ -806,6 +815,9 @@ svg:hover path {
 
     .pb-lg-147 {
         padding-bottom: 157px;
+    }
+    .gap-lg-77 {
+        gap: 60px !important;
     }
 
 }
