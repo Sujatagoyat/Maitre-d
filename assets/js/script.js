@@ -11,7 +11,7 @@ menuIcon.addEventListener("click", function () {
 $('.responsive').slick({
     dots: false,
     infinite: true,
-    autoplay:true,
+    
     speed: 300,
     prevArrow: ".prev",
     nextArrow: ".next",
@@ -24,7 +24,8 @@ $('.responsive').slick({
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
-          dots: false
+          dots: false,
+          autoplay:true,
         }
       },
       {
@@ -32,13 +33,15 @@ $('.responsive').slick({
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          autoplay:true,
         }
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          autoplay:true,
         }
       }
       // You can unslick at a given breakpoint now by adding:

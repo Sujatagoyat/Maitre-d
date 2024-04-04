@@ -409,13 +409,13 @@ svg:hover path {
 .prev-arrow {
     position: absolute;
     top: 50%;
-    left: 5%;
+    left: 4%;
 }
 
 .next-arrow {
     position: absolute;
     top: 50%;
-    right: 5%;
+    right: 4%;
 }
 
 .max-w-368 {
@@ -709,7 +709,7 @@ svg:hover path {
     }
 
     .cross span:nth-child(1) {
-        transform: rotate(56deg) translateY(25px);
+        transform: rotate(54deg) translateY(25px);
         transition: all 300ms linear;
         position: relative;
         top: -7px;
@@ -823,4 +823,18 @@ svg:hover path {
         gap: 60px !important;
     }
 
+}
+@media (min-width:1440px) {
+    
+.prev-arrow {
+    position: absolute;
+    top: 50%;
+    left: 9%;
+}
+
+.next-arrow {
+    position: absolute;
+    top: 50%;
+    right: 9%;
+}
 }
