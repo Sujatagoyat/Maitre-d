@@ -79,7 +79,7 @@
 }
 
 .text-40 {
-    font-size: var(--fs-xl);
+    font-size: var(--fs-2xl);
 }
 
 .text-61 {
@@ -639,11 +639,11 @@ svg:hover path {
 
 @media (max-width:576px) {
     .text-61 {
-        font-size: var(--fs-xl);
+        font-size: var(--fs-2xl);
     }
 
     .lh-71 {
-        line-height: 35px;
+        line-height: 50px;
     }
 
     .gap-md-30 {
