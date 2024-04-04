@@ -55,7 +55,7 @@ const topBtn = document.querySelector(".topBtn");
 const show = document.querySelector(".show");
 
 window.addEventListener("scroll", function () {
-    if (window.scrollY > 60) {
+    if (window.scrollY >2000) {
         topBtn.classList.add("show");
     } else {
         topBtn.classList.remove("show");
