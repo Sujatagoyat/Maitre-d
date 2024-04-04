@@ -565,8 +565,8 @@ svg:hover path {
     background-repeat: no-repeat;
 }
 
-.gap-51 {
-    gap: 51px;
+.gap-25 {
+    gap: 25px;
 }
 
 .pb-lg-33 {
@@ -727,6 +727,9 @@ svg:hover path {
     .px-md-45{
         padding-left: 45px;
         padding-right: 45px;
+    }
+    .gap-sm-51{
+        gap: 51px;
     }
 }
 
