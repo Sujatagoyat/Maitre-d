@@ -280,7 +280,8 @@ svg:hover path {
 }
 .bottom-layer{
     position: absolute;
-    bottom: -150px;
+    bottom: 0px;
+    z-index: -1;
 }
 
 .pt-50 {
@@ -344,7 +345,7 @@ svg:hover path {
 .choose-card:hover {
     /* color: var(--fc-white); */
     background: linear-gradient(96.64deg, #FD9B2B 13.58%, #F14F09 86.99%);
-    transform: translateY(-43px);
+    /* transform: translateY(-43px); */
 }
 
 .choose-card:hover .clr-white {
@@ -570,6 +571,9 @@ svg:hover path {
     background: linear-gradient(96.64deg, #F14F09 10.58%, #FD9B2B 100%);
     transition: all 200ms linear;
 }
+.max-w-618 {
+    max-width: 618px;
+}
 
 .pt-50 {
     padding-top: 50px;
@@ -633,8 +637,9 @@ svg:hover path {
     width: 0;
     height: 2px;
     background: linear-gradient(96.64deg, #FD9B2B 13.58%, #F14F09 86.99%);
-    left: 0;
+    left: 50%;
     bottom: -4px;
+    transform: translateX(-50%);
     transition: all 200ms linear;
 }
 
@@ -664,6 +669,9 @@ svg:hover path {
     opacity: 1;
     visibility: visible;
 }
+.svg-clr:hover path{
+    fill: var(--fc-white);
+} 
 
 .pulse {
     animation: pulse-animation 2s infinite;
@@ -702,7 +710,7 @@ svg:hover path {
 @media (max-width:768px) {
     .choose-card:hover {
         background: linear-gradient(96.64deg, #FD9B2B 13.58%, #F14F09 86.99%);
-        scale: 0.9;
+    
     }
 }
 
@@ -854,13 +862,6 @@ svg:hover path {
     .max-w-484 {
         max-width: 484px;
     }
-
-
-
-    .max-w-618 {
-        max-width: 618px;
-    }
-
     .max-w-540 {
         max-width: 540px;
     }
