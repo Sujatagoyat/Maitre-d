@@ -126,6 +126,9 @@
 .lh-21 {
     line-height: 21.53px;
 }
+.lh-16{
+    line-height: 16px;
+}
 
 /* ========================= font-weight==================== */
 .fw-400 {
@@ -441,7 +444,7 @@ svg:hover path {
 }
 
 .border_bottom {
-    border-bottom: 2px solid var(--fc-black) !important;
+    border-bottom: 1px solid var(--fc-black) !important;
 }
 
 .border-none {
@@ -531,7 +534,7 @@ svg:hover path {
     background: linear-gradient(96.64deg, #FD9B2B 13.58%, #F14F09 86.99%);
     border-radius: 10px;
     padding: 41px 25px 40px 21px;
-    cursor: pointer;
+   
 }
 
 .platinum-box:hover {
@@ -661,7 +664,9 @@ svg:hover path {
 
     }
     :root{
-        --fs-2xl:30px
+        --fs-2xl:30px;
+        --fs-md: 16px;
+        
     }
 }
 @media (max-width:768px) {
