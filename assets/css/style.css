@@ -151,12 +151,16 @@
 
 /* ================================= header ====================================== */
 .bg-img {
-    background-image: url(../images/png/hero-bg-img.png);
+    background-image: url(../images/png/hero-bg-img-1.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 1006px;
 }
+/* .layer-pstn{
+    position: absolute;
+    top: 0;
+} */
 
 .gap-30 {
     gap: 30px;
@@ -757,6 +761,12 @@ svg:hover path {
         padding: 12px 37px;
         border-radius: 30.5px;
         border: transparent;
+    }
+    .choose-card:hover {
+        /* color: var(--fc-white); */
+        background: linear-gradient(96.64deg, #FD9B2B 13.58%, #F14F09 86.99%);
+        transform: translateY(-43px);
+    
     }
 }
 
