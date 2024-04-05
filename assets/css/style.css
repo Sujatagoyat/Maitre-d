@@ -418,13 +418,13 @@ svg:hover path {
 .prev-arrow {
     position: absolute;
     top: 50%;
-    left: 4%;
+    left:-20px;
 }
 
 .next-arrow {
     position: absolute;
     top: 50%;
-    right: 4%;
+    right: -20px;
 }
 
 .max-w-368 {
@@ -865,12 +865,12 @@ svg:hover path {
 .prev-arrow {
     position: absolute;
     top: 50%;
-    left: 9%;
+    left: -105px;
 }
 
 .next-arrow {
     position: absolute;
     top: 50%;
-    right: 9%;
+    right: -105px;
 }
 }
