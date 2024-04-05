@@ -333,12 +333,12 @@
                     <div class="w-100">
                         <div class="d-flex gap-lg-5 gap-1 outer-box justify-content-lg-center justify-content-between align-items-center max-w-540 px-sm-20 px-md-45">
                             <p class="fw-600 text-20 lh-30 ff-worksans text-nowrap mb-0 color-white">Monthly Pricing</p>
-                            <div class="turnBtn d-flex align-items-center justify-content-end">
+                            <div class="turnBtn d-flex align-items-center justify-content-start">
                                 <div class="round"></div>
                             </div>
                             <p class="fw-400 text-20 lh-30 ff-worksans text-nowrap mb-0 color-white d-md-block d-none">Yearly Pricing</p>
                         </div>
-                        <div class="white-box max-w-540">
+                        <div class="white-box max-w-540 monthplan ">
                             <div class="d-flex align-items-center  justify-content-between mb-lg-29 ">
                                 <p class="fw-400 text-20 lh-30 ff-worksans mb-0 color-lightgrey">Queue Management</p>
                                 <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
@@ -469,6 +469,41 @@
                                    </svg>
                             </div>
                     </div>
+                    <div class="white-box max-w-540 d_none yearplan">
+                        <div class="d-flex align-items-center  justify-content-between mb-lg-29 ">
+                            <p class="fw-400 text-20 lh-30 ff-worksans mb-0 color-lightgrey">Queue Management</p>
+                            <img src="./assets/images/svg/price-svg.svg" alt="price-svg.svg">
+                        </div>
+                        <div class="d-flex align-items-center  justify-content-between mb-lg-29">
+                            <p class="fw-400 text-20 lh-30 ff-worksans mb-0 color-lightgrey">Point of Sale</p>
+                            <img src="./assets/images/svg/price-svg.svg" alt="price-svg.svg">
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mb-lg-29">
+                            <p class="fw-400 text-20 lh-30 ff-worksans mb-0 color-lightgrey">Barber Management</p>
+                            <img src="./assets/images/svg/price-svg.svg" alt="price-svg.svg">
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mb-lg-29">
+                            <p class="fw-400 text-20 lh-30 ff-worksans mb-0 color-lightgrey">Customer Database</p>
+                            <img src="./assets/images/svg/price-svg.svg" alt="price-svg.svg">
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mb-lg-29">
+                            <p class="fw-400 text-20 lh-30 ff-worksans mb-0 color-lightgrey">Timesheets</p>
+                            <img src="./assets/images/svg/price-svg.svg" alt="price-svg.svg">
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mb-lg-29">
+                            <p class="fw-400 text-20 lh-30 ff-worksans mb-0 color-lightgrey">Pricing Management</p>
+                            <img src="./assets/images/svg/price-svg.svg" alt="price-svg.svg">
+                                
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mb-lg-29">
+                            <p class="fw-400 text-20 lh-30 ff-worksans mb-0 color-lightgrey">Inventory Management</p>
+                            <img src="./assets/images/svg/price-svg.svg" alt="price-svg.svg">
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between ">
+                            <p class="fw-400 text-20 lh-30 ff-worksans mb-0 color-lightgrey">Analytics and Reporting</p>
+                           <img src="./assets/images/svg/price-svg.svg" alt="price-svg.svg">       
+                        </div>
+                </div>
                     </div>
                 </div>
                 <div class="col-lg-6 d-flex  justify-content-center flex-column pt-lg-0 pt-5">
@@ -526,8 +561,10 @@
                                   <p class="fw-600 text-20 lh-23 ff-worksans color-white">Platinum</p>
                             </div>
                               <div class="d-flex ">
-                                  <h3 class="fw-600 text-48 lh-56 ff-worksans color-white mb-0">$449</h3>
-                                  <p class="fw-500 text-14 lh-16 ff-worksans color-white mb-0">/Month</p>
+                                  <h3 class="fw-600 text-48 lh-56 ff-worksans color-white mb-0 monthprice d-block">$449</h3>
+                                  <h3 class="fw-600 text-48 lh-56 ff-worksans color-white mb-0 d_none yearlyprice">$999</h3>
+                                  <p class="fw-500 text-14 lh-16 ff-worksans color-white mb-0 month d-block">/Month</p>
+                                  <p class="fw-500 text-14 lh-16 ff-worksans color-white mb-0 yearly d_none">/Yearly</p>
                               </div>
                         </div>                       
                     </div>
@@ -547,6 +584,7 @@
         </div>
             
         <div class="my-container">
+           
             <div class="row pt-lg-180 pt-50">
                 <div class="col-lg-6">
                     <div class="d-flex align-items-center justify-content- center gap-2 ">
@@ -555,21 +593,22 @@
                     </div>
                     <h1 class="fw-700 text-40 lh-46 ff-worksans color-black pt-2 text- center pb-lg-110 pb-lg-50 pb-10 ">Get in
                         touch! </h1>
+                        <form action="" id="page" autocomplete="off">
                     <div class="row">
                         <div class="col-sm-6 ">
-                            <input type="text" placeholder="Full Name "
+                            <input type="text" placeholder="Full Name " id="full name" autocomplete="off"
                                 class="fw-400 text-16 lh-18 ff-worksans border_bottom border-none color-lightgrey w-100 pb-3 outline_none pt-lg-0 pt-3">
                         </div>
                         <div class="col-sm-6 max-w-269 ">
-                            <input type="text" placeholder="Email Address "
+                            <input type="text" placeholder="Email Address " id="address" autocomplete="off"
                                 class="fw-400 text-16 lh-18 ff-worksans border_bottom border-none color-lightgrey w-100 pb-3 outline_none pt-lg-0 pt-3">
                         </div>
                         <div class="col-12">
-                            <input type="text" placeholder="Company Name "
+                            <input type="text" placeholder="Company Name " id="company" autocomplete="off"
                                 class="fw-400 text-16 lh-18 ff-worksans border_bottom border-none color-lightgrey w-100 pb-3 pt-lg-5 pt-3 outline_none">
                         </div>
                         <div class="col-12">
-                            <textarea name="text" placeholder="Message " id="message" cols="10" rows="4"
+                            <textarea name="text" placeholder="Message " id="message" cols="10" rows="4" 
                                 class="fw-400 text-16 lh-18 ff-worksans border_bottom border-none color-lightgrey w-100 mb-3 mt-lg-4 mt-3 outline_none resizer_none scroll"></textarea>
                         </div>
                         <div class="max-w-147 mx-auto ">
@@ -578,9 +617,11 @@
                         </div>
                     </div>
                 </div>
+            </form>
                 <div class="col-lg-6">
                     <img class="w-100 max-w-618" src="./assets/images/png/contact-img.png" alt="contact-img.png">
                 </div>
+           
             </div>
         </div>
     </section>

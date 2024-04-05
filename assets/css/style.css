@@ -488,7 +488,15 @@ svg:hover path {
     border: transparent;
     border-radius: 10px 10px 0px 0px;
 }
-
+/* .d-block{
+    display: block !important;
+} */
+/* .d-none{
+    display: none !important;
+} */
+.d_none{
+    display: none !important;
+}
 .gap-lg-244 {
     gap: 244px;
 }

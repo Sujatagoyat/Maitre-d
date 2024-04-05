@@ -49,13 +49,21 @@ $('.responsive').slick({
       // instead of a settings object
     ]
   });
+
   const turnBtn = document.querySelector(".turnBtn");
   turnBtn.addEventListener("click", function () {
     turnBtn.classList.toggle("justify-content-end");
+    document.querySelector(".month").classList.toggle("d-none");
+    document.querySelector(".monthprice").classList.toggle("d-none")
+    document.querySelector(".monthplan").classList.toggle("d-none")
+    document.querySelector(".yearplan").classList.toggle("d-block")
+    document.querySelector(".yearlyprice").classList.toggle("d-block")
+    document.querySelector(".yearly").classList.toggle("d-block"); 
+
 });
 
 const topBtn = document.querySelector(".topBtn");
-const show = document.querySelector(".show");
+const show = document.querySelector(".show"); 
 
 window.addEventListener("scroll", function () {
     if (window.scrollY >2000) {
