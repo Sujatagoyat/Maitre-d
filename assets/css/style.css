@@ -459,9 +459,7 @@
 }
 
 /* ============================== contact-us============================================ */
-.pt-lg-180 {
-    padding-top: 180px;
-}
+
 
 .border_bottom {
     border-bottom: 1px solid var(--fc-black) !important;
@@ -914,7 +912,9 @@
         background: linear-gradient(96.64deg, #FD9B2B 13.58%, #F14F09 86.99%);
         transform: translateY(-43px);
     }
-
+    .pt-lg-180 {
+        padding-top: 180px;
+    }
 
 }
 
