@@ -34,6 +34,7 @@
     --fc-offwhite: #B2B2B2;
     --fc-grey: #404040;
     --fc-orange: #F14F09;
+    --fc-secwhite:#FFFCFC;
 }
 
 /* ===================== color ======================== */
@@ -51,6 +52,9 @@
 
 .color-offwhite {
     color: var(--fc-offwhite);
+}
+.choose-bg-clr{
+    background: var(--fc-secwhite);
 }
 
 /* ===================== font-size======================== */
@@ -238,7 +242,7 @@
     color: var(--fc-orange);
 }
 
-svg:hover path {
+.svg-hover:hover path {
     fill: var(--fc-orange);
 }
 
@@ -333,6 +337,7 @@ svg:hover path {
     width: 100%;
     padding: 40px 18px;
     box-shadow: 0px 4px 66px 0px #0000000A;
+    background-color: var(--fc-white);
     border-radius: 8px;
     transition: all 300ms linear;
     height: 100%;
@@ -357,7 +362,7 @@ svg:hover path {
 
 }
 
-.choose-card:hover svg path {
+.choose-card:hover .svg-gradient path {
     fill: url(#gradient1);
 }
 
@@ -378,8 +383,8 @@ svg:hover path {
     max-width: 212px;
 }
 
-.mb-40 {
-    margin-bottom: 40px;
+.mt-40 {
+    margin-top: 40px;
 }
 
 .zoom:hover.sign-btn {
@@ -480,7 +485,7 @@ svg:hover path {
 
 .contact-svg {
     position: absolute;
-    top: 32%;
+    top: 0;
     left: 26%;
 }
 
@@ -877,17 +882,20 @@ svg:hover path {
     .mt-lg-60 {
         margin-top: 60px;
     }
+    .mb-lg-89{
+        margin-bottom: 89px;
+    }
 
-    .pt-lg-368 {
-        padding-top: 368px;
+    .mt-lg-350 {
+        margin-top: 350px;
     }
 
     .max-w-375 {
         max-width: 375px;
     }
 
-    .mb-lg-189 {
-        margin-bottom: 189px;
+    .pt-lg-100 {
+       padding-top: 100px;
     }
 
     .pb-lg-147 {
